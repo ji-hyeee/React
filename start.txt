@@ -1,0 +1,15 @@
+How to get the most from this course
+
+ The easy way is the hard way
+Learn by doing
+Avoid "Tutorial Hell"
+This isn't school
+the ability to write react code by yourself
+
+ spaced learning & repetition
+
+What we'll Learn
+Why we care about react
+JSX
+Custom components
+Styling
