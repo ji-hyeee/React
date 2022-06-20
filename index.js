@@ -1,58 +1,39 @@
-// import React from "react"
+/*
+11. Build a React info site
+Project 1 Part 1 - MarkUp
 
-// /**
-// Challenge: find out what happens if we try to append JSX
-// to our div#root using .append() instead of ReactDOM
+Challenge: Starting from scratch, build and render the 
+HTML for our section project. Check the Google slide for 
+what you're trying to build.
 
-// 1. Create a sample page in JSX (≥ 4 elements) and save them in a variable
-// 2. Select the div with the ID of "root" and use `.append()` to append
-//    your JSX
-// 3. See if you can guess what will show up in the browser before running
-//    the code
-// 4. See if you can explain what actually shows up in the browser
-//  */
+We'll be adding styling to it later.
 
-// const page = (
-//   <div>
-//     <h1>hye's life</h1>
-//     <ul>
-//       <li>eat</li>
-//       <li>sleep</li>
-//       <li>study</li>
-//     </ul>
-//   </div>
-// )
-
-// // document.getElementById("root").append(page);
-// // [object Object] 일종의 문자열
-
-// // 객체를 문자열화 해보자
-// document.getElementById("root").append(JSON.stringify(page));
-
-// // JSX 는 일반 자바스크립트를 반환한다 / 돔과 관련없음
-
-
-import React from "react"
-import ReactDOM from "react-dom" // 추가
-/**
-Challenge: fix our code!
-
-Don't forget, you're not using CDNs anymore, so there's no
-global "ReactDOM" variable to use anymore.
+Hints:
+* The React logo is a file in the project tree, so you can
+  access it by using `src="./react-logo.png" in your image
+  element
+* You can also set the `width` attribute of the image element
+  just like in HTML. In the slide, I have it set to 40px
  */
+
+import React from "react";
+import ReactDOM from "react-dom";
 
 const page = (
   <div>
-    <h1>My awesome website in React</h1>
-    <h3>Reasons I love React</h3>
-    <ol>
-      <li>It's composable</li>
-      <li>It's declarative</li>
-      <li>It's a hireable skill</li>
-      <li>It's actively maintained by skilled people</li>
-    </ol>
+    <img src="./react-logo.png" width="40px" />
+    <h1>Fun facts about React</h1>
+    <ul>
+      <li>Was first released in 2013</li>
+      <li>Was first released in 2013</li>
+      <li>Was first released in 2013</li>
+      <li>Was first released in 2013</li>
+      <li>Was first released in 2013</li>
+    </ul>
   </div>
 )
+ReactDOM.render(page, document.getElementById("root"));
 
-ReactDOM.render(page, document.getElementById("root")); // 렌더링 !
-// document.getElementById("root").append(JSON.stringify(page))
+  // img width
+  // <no> style="width:40px;"
+  // <yes> width="40px"
