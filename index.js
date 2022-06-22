@@ -1,76 +1,36 @@
-// 14. Build a React info site
-// Custom Components Part 2
-/**
-Challenge: 
+// 15. Build a React info site
+// Custom Components Quiz
 
-Part 2: 
-- Add a `header` element with a nested `nav` element. Inside the `nav`,
-  include a `img` element with the image of the React logo inside
-  (src="./react-logo.png") and make sure to set the width to something
-  more manageable so it doesn't take up the whole screen
-- Add an `h1` with some text describing the page. (E.g. "Reasons
-  I'm excited to learn React"). Place it above the ordered list.
-- Add a `footer` after the list that says: 
-    "© 20xx <last name here> development. All rights reserved."
+// 1. What is a React component?
+// 웹페이지를 구성하는 하나의 작은 단위
+// JSX !== HTML
+//// 풀이 : A function that returns React elements. (UI)
 
- */
-
-// 내가 푼 문제
-import React from "react"
-import ReactDOM from "react-dom"
-
-function Page() {
-    return (
-        <div>
-            <header>
-                <nav>
-                    <img src="./react-logo.png" width="40px" />
-                </nav>
-            </header>
-            <h1>Reasons I'm excited to learn React</h1>
-            <ol>
-                <li>It's a popular library, so I'll be
-                    able to fit in with the cool kids!</li>
-                <li>I'm more likely to get a job as a developer
-                    if I know React</li>
-            </ol>
-            <footer>© 2022 hye development. All rights reserved.</footer>
-        </div>
-    )
-}
-
-ReactDOM.render(<Page />, document.getElementById("root"))
+// 2. What's wrong with this code?
+// ```
+// function myComponent() {
+//     return (
+//         <small>I'm tiny text!</small>
+//     )
+// }
+// ```
+// Camel Case
+// // oh no pascal case // 첫글자가 대문자 !
 
 
-// 풀이
-import React from "react"
-import ReactDOM from "react-dom"
+// 3. What's wrong with this code?
+// ```
+// function Header() {
+//     return (
+//         <header>
+//             <nav>
+//                 <img src="./react-logo.png" width="40px" />
+//             </ nav>
+//         </header>
+//     )
+// }
 
-function Page() {
-    return (
-        <div>
-            <header>
-                <nav>
-                    <img src="./react-logo.png" width="40px" />
-                </nav>
-            </header>
-            <h1>Reasons I'm excited to learn React</h1>
-            <ol>
-                <li>It's a popular library, so I'll be
-                    able to fit in with the cool kids!</li>
-                <li>I'm more likely to get a job as a developer
-                    if I know React</li>
-            </ol>
-            <footer>
-                <small>© 2021 Ziroll development. All rights reserved.</small>
-            </footer>
-        </div>
-    )
-}
-
-ReactDOM.render(<Page />, document.getElementById("root"))
-
-
-// 새로 배운 것
-// width 설정 잊지말기 >>> width="40px"
-// <small> 글씨 작게하기
+// ReactDOM.render(Header(), document.getElementById("root"))
+// ```
+// like html element but still Camel Case // pascal cas too
+// // Header() >>> <Header />
