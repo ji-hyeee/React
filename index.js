@@ -1,17 +1,53 @@
-// 16 .Build a React info site
-// Parent / Child Components
+// 17. Build a React info site
+// Styling with Classes
 
 import React from "react"
 import ReactDOM from "react-dom"
 
-function Page() {
+/**
+Challenge: 
+
+- Add an `ul` inside the Header's `nav` and create
+  the following `li`s: "Pricing", "About", & "Contact"
+- Using flexbox, line up the nav items horizontally, and
+  put them inline with the React logo.
+- Change the image styling to happen in CSS instead of in-line
+  For practice, add a new class to the image in order to style it
+*/
+
+// JS
+// const ul = document.createElement("ul")
+// ul.className = ""
+
+
+function Header() {
+    return (
+        <header>
+            {/*  className 공부중이기에 추가해주기 */}
+            <nav className="nav">
+                <img src="./react-logo.png" className="nav-logo" />
+                {/* React JSX */}
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+
+function Footer() {
+    return (
+        <footer>
+            <small>© 2021 Ziroll development. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function MainContent() {
     return (
         <div>
-            <header>
-                <nav>
-                    <img src="./react-logo.png" width="40px" />
-                </nav>
-            </header>
             <h1>Reasons I'm excited to learn React</h1>
             <ol>
                 <li>It's a popular library, so I'll be
@@ -19,93 +55,18 @@ function Page() {
                 <li>I'm more likely to get a job as a developer
                     if I know React</li>
             </ol>
-            <footer>
-                <small>© 2021 Ziroll development. All rights reserved.</small>
-            </footer>
         </div>
     )
 }
-
-ReactDOM.render(<Page />, document.getElementById("root"))
-
-import React from "react"
-import ReactDOM from "react-dom"
-
-/**
-Mini Challenge:
-Move the `header` element from Page into 
-its own component called "Header"
-*/
 
 function Page() {
     return (
         <div>
             <Header />
-            <h1>React</h1>
-            <ol>
-                <li>It's a popular library, so I'll be
-                    able to fit in with the cool kids!</li>
-                <li>I'm more likely to get a job as a developer
-                    if I know React</li>
-            </ol>
-            <footer>
-                <small>© 2021 Ziroll development. All rights reserved.</small>
-            </footer>
+            <MainContent />
+            <Footer />
         </div>
     )
 }
-
-function Header() {
-    return (
-        <header>
-            <nav>
-                <img src="./react-logo.png" width="40px" />
-            </nav>
-        </header>
-    )
-}
-// 컴포넌트를 나눠서 작성해봅시다
-// 페이지가 많아질수록 좋아유
-
-ReactDOM.render(<Page />, document.getElementById("root"))
-
-import React from "react"
-import ReactDOM from "react-dom"
-
-/**
-Mini Challenge:
-Move the `header` element from Page into 
-its own component called "Header"
-*/
-
-function Page() {
-    return (
-        <div>
-            <Header />
-            <h1>React</h1>
-            <ol>
-                <li>It's a popular library, so I'll be
-                    able to fit in with the cool kids!</li>
-                <li>I'm more likely to get a job as a developer
-                    if I know React</li>
-            </ol>
-            <footer>
-                <small>© 2021 Ziroll development. All rights reserved.</small>
-            </footer>
-        </div>
-    )
-}
-
-function Header() {
-    return (
-        <header>
-            <nav>
-                <img src="./react-logo.png" width="40px" />
-            </nav>
-        </header>
-    )
-}
-// 컴포넌트를 나눠서 작성해봅시다
-// 페이지가 많아질수록 좋아유
 
 ReactDOM.render(<Page />, document.getElementById("root"))
