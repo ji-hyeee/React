@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    /* 쭈구러진 이미지 멀쩡하게 바꿔주기 */
+    align-items: center;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items>li {
+    /* li 요소 서로 멀어지게끔 */
+    padding: 10px;
+}
+
+.img {
+    width: 60px;
+}
+
+/* 
+나의 초라한 CSS 실력...
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+} 
+*/
