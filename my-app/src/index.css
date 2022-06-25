@@ -19,6 +19,11 @@
     width: 60px;
 }
 
+.nav-logo {
+    width: 10rem;
+    margin-left: -2rem;
+}
+
 /* 
 나의 초라한 CSS 실력...
 .nav-items {

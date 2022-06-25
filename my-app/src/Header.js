@@ -1,12 +1,14 @@
-// import React from "react"
 import './index.css'
+// image 도 import 로 연결해주기
+import logo from './logo.svg';
 
 // 이렇게 적어도 된다
 export default function Header() {
     return (
         <header>
             <nav className="nav">
-                <img src="./react-logo.png" className="nav-logo" />
+                {/* <img src=""./image/logo.svg" className="nav-logo" /> */}
+                <img src={logo} className="nav-logo" />
                 <ul className="nav-items">
                     <li>Pricing</li>
                     <li>About</li>

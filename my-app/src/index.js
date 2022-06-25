@@ -1,11 +1,11 @@
-// 19. Build a React info site
-// Setup a local React environment w/ Create React App
+// 20. Build a React info site
+// Styles and Images with CRA
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+// css import / 스타일로더로 쉽게 css 연결하기
 import './index.css';
-import './'
 import App from './App';
 import Header from './Header';
 import MainContent from './MainContent';
