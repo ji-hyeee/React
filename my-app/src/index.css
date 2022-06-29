@@ -1,22 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
     /* 쭈구러진 이미지 멀쩡하게 바꿔주기 */
     align-items: center;
+    padding: 1rem;
+    background-color: #21222A;
+}
+
+.nav-text {
+    margin: 0;
+    margin-right: auto;
+    color: #61DAFB;
 }
 
 .nav-items {
     list-style: none;
     display: flex;
+    color: #DEEBF8;
 }
 
 .nav-items>li {
     /* li 요소 서로 멀어지게끔 */
-    padding: 10px;
-}
-
-.img {
-    width: 60px;
+    padding: 0 3rem;
+    color: #DEEBF8;
 }
 
 .nav-logo {

@@ -9,6 +9,7 @@ export default function Header() {
             <nav className="nav">
                 {/* <img src=""./image/logo.svg" className="nav-logo" /> */}
                 <img src={logo} className="nav-logo" />
+                <h1 className="nav-text">ReactFacts</h1>
                 <ul className="nav-items">
                     <li>Pricing</li>
                     <li>About</li>

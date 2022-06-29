@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-// css import / 스타일로더로 쉽게 css 연결하기ㅣㄷㅁㄱ
+// css import / 스타일로더로 쉽게 css 연결하기
 import './index.css';
 import App from './App';
 import Header from './Header';
@@ -22,51 +22,15 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-// 21. Build a React info site
-// Quick mental outline of project
+// 22. Build a React info stie
+// Quick Figma Walkthrough
+// 피그마 튜토리얼
 
-// import React from "react";
-// import ReactDOM from "react-dom"
+// 23. Build a React info stie
+// Project Setup
+// 별도의 폴더를 만들었을 경우
+// ./폴더명./파일명
 
-// function Page(){
-//     return (
-//         <>
-//         // 내 생각
-//         <Header>
-//             <img/>
-//             <span></span>
-//             <span></span>
-//         </Header>
-//         <Main>
-//             <h1></h1>
-//             <ul>
-//                 <li></li>
-//                 <li></li>
-//                 <li></li>
-//                 <li></li>
-//                 <li></li>
-//             </ul>
-//         </Main>
-        
-//         // 풀이
-//         <div.container>
-//             <nav>
-//                 <img />
-//                 <h3></h3>
-//                 <h4></h4>
-//             </nav>
-//             <main>
-//                 <h1></h1>
-//                 <ul>
-//                     <li></li>
-//                     <li></li>
-//                     <li></li>
-//                     <li></li>
-//                     <li></li>
-//                 </ul>
-//             </main>
-//         </div.container>
-//         </>
-//     )
-// }
-// ReactDOM.render(<Page />, document.getElementById("root"))
+// 24. Build a React info stie
+// Navbar and Styling
+// css 에는 기본요소보다는 className 을 사용하자
