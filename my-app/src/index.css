@@ -4,12 +4,13 @@
 
 body {
     margin: 0;
+    height: 100vh;
+    background-color: #282D35;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    /* 쭈구러진 이미지 멀쩡하게 바꿔주기 */
     align-items: center;
     padding: 1rem;
     background-color: #21222A;
@@ -28,7 +29,6 @@ body {
 }
 
 .nav-items>li {
-    /* li 요소 서로 멀어지게끔 */
     padding: 0 3rem;
     color: #DEEBF8;
 }
@@ -38,15 +38,24 @@ body {
     margin-left: -2rem;
 }
 
-/* 
-나의 초라한 CSS 실력...
-.nav-items {
-    list-style: none;
-    display: flex;
+/* main */
+main {
+    padding: 57px 27px;
+    color: white;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-} 
-*/
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.main--facts {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.main--facts>li {
+    line-height: 19px;
+    padding-block: 10px;
+}
