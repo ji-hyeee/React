@@ -42,6 +42,10 @@ body {
 main {
     padding: 57px 27px;
     color: white;
+    /* background logo */
+    background-image: url("./logo.svg");
+    background-repeat: no-repeat;
+    background-position: 70.2rem
 }
 
 .main--title {
@@ -58,4 +62,9 @@ main {
 .main--facts>li {
     line-height: 19px;
     padding-block: 10px;
+}
+
+.main--facts>li::marker {
+    font-size: 1.5rem;
+    color: #61DAFB;
 }
