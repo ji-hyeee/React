@@ -1,70 +1,95 @@
 * {
     box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
 }
 
-body {
-    margin: 0;
-    height: 100vh;
-    background-color: #282D35;
-}
-
-.nav {
+/* App */
+.App_container {
+    /* border: 1px solid red; */
+    width: 20rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
-    background-color: #21222A;
+    border-radius: 0.5rem;
+    background: whitesmoke;
+    margin: 1rem auto;
 }
 
-.nav-text {
-    margin: 0;
-    margin-right: auto;
-    color: #61DAFB;
+/* Header */
+.header_img {
+    width: 100%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
 }
 
-.nav-items {
-    list-style: none;
+/* Main */
+header {
     display: flex;
-    color: #DEEBF8;
+    flex-direction: column;
+    align-items: center;
 }
 
-.nav-items>li {
-    padding: 0 3rem;
-    color: #DEEBF8;
+h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: -0.1rem;
 }
 
-.nav-logo {
-    width: 10rem;
-    margin-left: -2rem;
-}
-
-/* main */
-main {
-    padding: 57px 27px;
-    color: white;
-    /* background logo */
-    background-image: url("./logo.svg");
-    background-repeat: no-repeat;
-    background-position: 70.2rem
-}
-
-.main--title {
-    margin: 0;
-    font-size: 39px;
-    letter-spacing: -0.05em;
-}
-
-.main--facts {
-    margin-top: 46px;
-    max-width: 400px;
-}
-
-.main--facts>li {
-    line-height: 19px;
-    padding-block: 10px;
-}
-
-.main--facts>li::marker {
+h2 {
     font-size: 1.5rem;
-    color: #61DAFB;
+    font-weight: normal;
+    color: orange;
+    margin-bottom: 0.5rem;
+}
+
+.site {
+    text-decoration: none;
+    font-weight: 100;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+button {
+    width: 15rem;
+    height: 2rem;
+    background: white;
+    border: 0.1rem solid darkgrey;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+main {
+    width: 78%;
+}
+
+h3 {
+    letter-spacing: 1px;
+}
+
+p {
+    letter-spacing: 0.5px;
+    line-height: 1.1rem;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: slategrey;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background: gainsboro;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.icon {
+    width: 2.5rem;
 }

@@ -1,18 +1,9 @@
-import './index.css'
-import logo from './logo.svg';
+// import React from "react"
 
 export default function Header() {
     return (
-        <header>
-            <nav className="nav">
-                <img src={logo} alt="img" className="nav-logo" />
-                <h1 className="nav-text">ReactFacts</h1>
-                <ul className="nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
+        <div>
+            <img className="header_img" src="https://pbs.twimg.com/media/E3XXe5hWUAIdg62?format=jpg&name=900x900" alt="mylove" />
+        </div>
     )
 }
