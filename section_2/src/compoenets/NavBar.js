@@ -8,9 +8,3 @@ export default function Navbar() {
         </nav>
     )
 }
-
-// 2. Build an AirBnb Experiences Clone
-// Project Setup: Hero
-
-// Challenge: Build the Hero component.
-// Check the Figma file for the design specifics.
