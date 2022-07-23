@@ -54,6 +54,7 @@ section {
 .card {
   width: 13rem;
   font-size: 12px;
+  margin-bottom: 5rem;
 }
 
 .card--image {
