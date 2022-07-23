@@ -1,16 +1,20 @@
 import React from "react"
 
-export default function Contact() {
+export default function Contact(props) {
     return (
         <div className="contact-card">
-            <img src="https://pbs.twimg.com/media/FYVZMQSaMAE4cDO?format=jpg&name=large" alt="img" />
-            <h3>Mr. Whiskerson</h3>
+            {/* 2. Build an AirBnb Experiences Clone */}
+            {/* Props Part 4: receiving props in a component */}
+            {/* receiving: 전수 */}
+            <img src={props.img} alt="img" />
+            <h3>{props.name}n</h3>
             <div className="info-group">
-                <p>(212) 555-1234</p>
+                <p>{props.phone}</p>
             </div>
             <div className="info-group">
-                <p>mr.whiskaz@catnap.meow</p>
+                <p>{props.email}</p>
             </div>
         </div>
     )
 }
+

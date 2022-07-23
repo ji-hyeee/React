@@ -11,8 +11,8 @@ export default function App() {
       <Hero />
       <Card />
       <div className="contacts">
-        {/* 2. Build an AirBnb Experiences Clone
-        Props Part 3: Create a contact component */}
+        {/* 2. Build an AirBnb Experiences Clone */}
+        {/* Props Part 3: Create a contact component */}
         <Contact
           img="https://pbs.twimg.com/media/FYVZMQSaMAE4cDO?format=jpg&name=large"
           name="Mr. Whiskerson"
