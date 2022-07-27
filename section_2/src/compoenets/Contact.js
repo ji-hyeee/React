@@ -4,7 +4,7 @@ export default function Contact({ img, name, phone, email }) {
     return (
         <div className="contact-card">
             <img src={img} alt="img" />
-            <h3>{name}n</h3>
+            <h3>{name}</h3>
             <div className="info-group">
                 <p>{phone}</p>
             </div>
@@ -16,18 +16,17 @@ export default function Contact({ img, name, phone, email }) {
 }
 
 // 2. Build an AirBnb Experiences Clone
-// Destructuring props // 구조화
+// Passing in non-string Props
 
-// const person = {
-//     img: "./images/mr-whiskerson.png",
-//     name: "Mr. Whiskerson",
-//     phone: "(800) 555-1234",
-//     email: "mr.whiskaz@catnap.meow"
-// }
+//  how might you pass in a prop that wasn't a string data type?
+//  문자열 데이터 유형이 아닌 prop을 어떻게 전달할 수 있습니까?
 
-// const {img, name} = person
-// console.log(name)
+// 중괄호!!!
 
-// props 로 내려주고 객체키처럼 받아와도 되지만
-// 직관적인 이름을 사용해주자
-// JS 처럼 중괄호로 감싸준다.
+{/* <Joke 
+    punchline="It’s hard to explain puns to kleptomaniacs because they always take things literally."
+    isPun={true}
+    upvotes={10}
+    downvotes={2}
+    comments={[{author: "", body: "", title: ""}, {...}]}
+/> */}
