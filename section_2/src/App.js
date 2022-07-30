@@ -9,7 +9,16 @@ export default function App() {
     <div>
       <Navbar />
       <Hero />
-      <Card />
+      <Card
+        img="https://pbs.twimg.com/media/FYMzp5LVEAAqFVu?format=jpg&name=large"
+        rating="5.0"
+        reviewCount={6}
+        country="Seoul"
+        title="The Man Who Laughs"
+        price="150,000"
+      />
+
+      {/* props practice */}
       <div className="contacts">
         <Contact
           img="https://pbs.twimg.com/media/FYVZMQSaMAE4cDO?format=jpg&name=large"
