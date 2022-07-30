@@ -1,8 +1,6 @@
 import React from "react"
 
 export default function Card(props) {
-  // props 확인하기
-  // console.log(props)
   return (
     <div className="card">
       <img src={props.img} alt="card1" className="card--image" />
@@ -19,19 +17,71 @@ export default function Card(props) {
 }
 
 // 2. Build an AirBnb Experiences Clone
-// Project: Pass props to card components
+// Review - array.map()
 
-// props
-// img="https://pbs.twimg.com/media/FYMzp5LVEAAqFVu?format=jpg&name=large"
-// rating="5.0"
-// reviewCount={6}
-// country="Seoul"
-// title="The Man Who Laughs"
-// price="150,000"
+/*
+Challenge 1:
+Given an array of numbers, return an array of each number, squared
+*/
+const nums = [1, 2, 3, 4, 5]
+// -->       [1, 4, 9, 16, 25]
+// Your code here
 
-// JS 를 사용하기 위해서 {중괄호} 를 사용하자!
-// 이름 자체를 넘겨줄때 { img, price ... }
-// props 통째로 넘길때 prop(아무거나 써도됨)
+const sum = nums.map(num => num * num);
+console.log(sum);
 
-// 이미지파일 넘길때 신기하게 하길래...
-// {`../images/${img}`}
+// 선언식을 쓰다니... 머리아프군...
+// 화살표에 중독되어버린 나...
+// 다시보니 표현식이었군 맞나...
+// ref
+// const sum = nums.app(function(e)){
+//  return e * e
+// })
+
+
+/*
+Challenge 2:
+Given an array of strings, return an array where 
+the first letter of each string is capitalized
+*/
+
+const names = ["alice", "bob", "charlie", "danielle"]
+// -->        ["Alice", "Bob", "Charlie", "Danielle"]
+// Your code here
+
+// 이거 맞냐...
+const up = names.map(name => name[0].toUpperCase() + name.slice(1))
+console.log(up)
+
+// ref
+// oh my gosy 맞았다리
+// const up = names.map(name=>{
+//     return name[0].toUpperCase() + name.slice(1)
+// })
+
+// 탬플릿리터럴 써보기
+// 가독성이 안 좋아서 기존 코드를 사용했다
+// return `${name[0].toUpperCase()}${name.slice(1)}`
+
+/*
+Challenge 3:
+Given an array of strings, return an array of strings that wraps each
+of the original strings in an HTML-like <p></p> tag.
+
+E.g. given: ["Bulbasaur", "Charmander", "Squirtle"]
+return: ["<p>Bulbasaur</p>", "<p>Charmander</p>", "<p>Squirtle</p>"]
+*/
+
+const pokemon = ["Bulbasaur", "Charmander", "Squirtle"]
+// -->          ["<p>Bulbasaur</p>", "<p>Charmander</p>", "<p>Squirtle</p>"]
+// Your code here
+
+// 오케이 ~
+const tag = pokemon.map(el => `<p>${el}</p>`)
+console.log(tag)
+
+// ref
+// 나랑 그냥 똑같이 썼음 
+// const tag = pokemon.map(mon=>{
+//     return `<p>${mon}</p>`
+// })
