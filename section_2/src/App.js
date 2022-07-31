@@ -48,3 +48,32 @@ export default function App() {
     </div>
   )
 }
+
+
+// 2. Build an AirBnb Experiences Clone
+// React renders array
+
+// react can render an array of jsx elements and put those concepts together 
+// which will allow us to instead of hard coding our data directly into our components 
+// like we're doing here instead
+
+
+// react는 jsx 요소의 배열을 렌더링하고 이러한 개념을 함께 결합하여 여기에서 하는 것처럼 
+// 데이터를 컴포넌트에 직접 하드 코딩하는 대신 할 수 있습니다.
+
+// export default function App() {
+//   const colors = [
+//           <h3>Red</h3>, 
+//           <h3>Orange</h3>, 
+//           <h3>Yellow</h3>,
+//           <h3>Green</h3>,
+//           <h3>Blue</h3>,
+//           <h3>Indigo</h3>,
+//           <h3>Violet</h3>
+//       ]
+//   return (
+//       <div>
+//           {colors}
+//       </div>
+//   )
+// }
