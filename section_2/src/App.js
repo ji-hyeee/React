@@ -60,13 +60,41 @@ export default function App() {
 
 
 // 2. Build an AirBnb Experiences Clone
-// Mapping Components
+// Map Quiz
+
+// 1. What does the `.map()` array method do?
+// `.map()` 배열 메서드는 무엇을 합니까?
+// 배열을 순회하면서 특정 코드를 적용한 값을 반환한다
 
 
-// Challenge: See if you can correctly pass the necessary props to the 
-// Joke component in the .map() (and render the jokeElements array) so 
-// the jokes show up on the page again
+// 2. What do we usually use `.map()` for in React?
+// React에서 일반적으로 `.map()`을 사용하는 것은 무엇입니까?
+// 반복되는 요소 렌더링 시 사용
 
-// 과제: 필요한 소품을 올바르게 전달할 수 있는지 확인하십시오.
-// .map()의 농담 구성 요소(그리고 jokeElements 배열을 렌더링)
-// 농담이 페이지에 다시 나타납니다.
+
+// 3. Why is using `.map()` better than just creating the components
+//    manually by typing them out?
+//    구성 요소를 만드는 것보다 `.map()`을 사용하는 것이 더 나은 이유
+//    수동으로 입력하여?
+// 재활용 가능
+
+
+//// 정답
+// 1
+// Returns a new array. Whatever gets returned from the callback
+// function provided is placed at the same index in the new array.
+// Usually we take the items from the original array and modify them
+// in some way.
+// 새 배열을 반환합니다.
+// 제공된 콜백 함수에서 반환되는 모든 항목은 새 배열의 동일한 인덱스에 배치됩니다.
+// 일반적으로 원래 배열에서 항목을 가져와서 어떤 식으로든 수정합니다.
+
+
+// 2
+// Convert an array of raw data into an array of JSX elements that can be displayed on the page.
+// 원시 데이터 배열을 페이지에 표시할 수 있는 JSX 요소 배열로 변환합니다.
+
+
+// 3
+// It makes our code more "self sustaining" - not requiring additional changes whenever the data changes.
+// 데이터가 변경될 때마다 추가 변경이 필요하지 않아 코드가 더 "자체 유지"됩니다.

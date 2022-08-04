@@ -13,6 +13,7 @@ export default function Card(props) {
       <p>{props.title}</p>
       <p><span className="bold">From ₩{props.price}</span> / person</p>
 
+      {/* map practice */}
       <div>
         {props.setup && <h3>Setup: {props.setup}</h3>}
         <p>Punchline: {props.punchline}</p>
