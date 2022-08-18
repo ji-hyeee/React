@@ -13,8 +13,8 @@ export default function App() {
       <Card
         key={datas.id}
         // 2. Build an AirBnb Experiences Clone
-        // Project: Pass object as props
-        datas={datas}
+        // Project: Spread object as props
+        {...datas}
       />
     )
   })

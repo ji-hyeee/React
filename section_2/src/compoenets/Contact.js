@@ -1,8 +1,7 @@
 import React from "react"
 
 export default function Contact(props) {
-
-    console.log(props.datas2)
+    // console.log(props.datas2)
     return (
         <div className="contact-card">
             <img src={props.datas2.img} alt="img" />
