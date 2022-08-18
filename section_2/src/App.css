@@ -51,11 +51,24 @@ section {
   font-size: 1.5rem;
 }
 
+/* 가로 스크롤 */
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+/* 가로 스크롤 */
 .card {
-  width: 13rem;
+  width: 17rem;
   font-size: 12px;
-  margin-bottom: 5rem;
-  border: 1px solid red;
+  margin-bottom: 2rem;
+  /* border: 1px solid red; */
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .card--image {
@@ -71,9 +84,6 @@ section {
 .card--star {
   height: 1rem;
 }
-
-/* 2. Build an AirBnb Experiences Clone  */
-/* Props Part 3: Create a contact component */
 
 .contacts {
   display: flex;
