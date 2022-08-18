@@ -2,53 +2,53 @@ export default [
     {
         id: 1,
         title: "The Man Who Laughs",
-        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        description: "A musical based on the novel of the same name by Victor Hugo.",
         price: "150,000",
         coverImg: "https://pbs.twimg.com/media/FWTmrKUaAAY3bCn?format=jpg&name=large",
         stats: {
             rating: 5.0,
             reviewCount: 127
         },
-        location: "Online",
-        openSpots: 0,
+        location: "sejongpac",
+        openSpots: 10,
     },
     {
         id: 2,
         title: "Hadestown",
-        description: "Interested in becoming a wedding photographer? For beginner and experienced photographers alike, join us in learning techniques required to leave the happy couple with memories that'll last a lifetime.",
+        description: "A modern reinterpretation of the story of Orpheus and Eurydice in Greek mythology.",
         price: "150,000",
         coverImg: "https://pbs.twimg.com/media/FY_SDfdUYAAukC4?format=jpg&name=small",
         stats: {
             rating: 5.0,
             reviewCount: 49
         },
-        location: "Online",
-        openSpots: 27,
+        location: "lgart",
+        openSpots: 0,
     },
     {
         id: 3,
         title: "In the Heights",
-        description: "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
+        description: "An American musical about what happens over three days in Washington Heights, a neighborhood of Latino immigrants in Manhattan, New York City.",
         price: "150,000",
         coverImg: "https://pbs.twimg.com/media/FZ3eAbcakAAdNcV?format=jpg&name=medium",
         stats: {
             rating: 4.8,
             reviewCount: 15
         },
-        location: "Norway",
-        openSpots: 3,
+        location: "Online",
+        openSpots: 10,
     },
     {
         id: 4,
         title: "Elisabeth",
-        description: "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
+        description: "A musical depicting the life of Elizabeth von Wittelsbach, Empress of Austria-Hungary, premiered in 1992.",
         price: "150,000",
         coverImg: "https://pbs.twimg.com/media/FL29HqAagAA5eCj?format=jpg&name=large",
         stats: {
             rating: 4.8,
             reviewCount: 30
         },
-        location: "Norway",
-        openSpots: 3,
+        location: "bluesquare",
+        openSpots: 0,
     }
 ]

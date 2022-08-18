@@ -13,12 +13,12 @@ nav {
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .gray {
   color: #918E9B;
+}
+
+.bold {
+  font-weight: bolder;
 }
 
 .nav--logo {
@@ -32,7 +32,6 @@ section {
 .hero {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
 }
 
 .hero--photo {
@@ -51,7 +50,6 @@ section {
   font-size: 1.5rem;
 }
 
-/* 가로 스크롤 */
 .cards-list {
   display: flex;
   flex-wrap: nowrap;
@@ -60,25 +58,54 @@ section {
   overflow-x: auto;
 }
 
-/* 가로 스크롤 */
 .card {
   width: 17rem;
   font-size: 12px;
   margin-bottom: 2rem;
-  /* border: 1px solid red; */
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-left: 1rem;
+  color: navy;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.card--spots {
+  /* border: 1px solid black; */
+  position: absolute;
+  background: white;
+  color: red;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  top: 0.7rem;
+  left: 0.7rem;
 }
 
 .card--image {
   width: 100%;
+  height: 24rem;
   border-radius: 1rem;
 }
 
 .card--stats {
   display: flex;
   align-items: center;
+  margin: 1rem 1rem;
+}
+
+.card--stats span {
+  font-size: 1rem;
 }
 
 .card--star {
@@ -92,7 +119,6 @@ section {
   gap: 40px;
   margin: 2rem 0;
   padding: 1rem;
-  /* border: 1px solid red; */
 }
 
 .contact-card {

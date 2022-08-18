@@ -12,7 +12,7 @@ export default function App() {
     return (
       <Card
         // 2. Build an AirBnb Experiences Clone
-        // Project: Key Prop
+        // Project: Sold Out Badge
         key={datas.id}
         img={datas.coverImg}
         rating={datas.stats.rating}
@@ -20,6 +20,7 @@ export default function App() {
         location={datas.location}
         title={datas.title}
         price={datas.price}
+        openSpots={datas.openSpots}
       />
     )
   })
