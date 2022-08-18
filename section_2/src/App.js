@@ -11,28 +11,19 @@ export default function App() {
   const dataList = data.map(datas => {
     return (
       <Card
-        // 2. Build an AirBnb Experiences Clone
-        // Project: Sold Out Badge
         key={datas.id}
-        img={datas.coverImg}
-        rating={datas.stats.rating}
-        reviewCount={datas.stats.reviewCount}
-        location={datas.location}
-        title={datas.title}
-        price={datas.price}
-        openSpots={datas.openSpots}
+        // 2. Build an AirBnb Experiences Clone
+        // Project: Pass object as props
+        datas={datas}
       />
     )
   })
 
-  const data2List = data2.map(datas => {
+  const data2List = data2.map(datas2 => {
     return (
       <Contact
-        key={datas.id}
-        img={datas.img}
-        name={datas.name}
-        phone={datas.phone}
-        email={datas.e}
+        key={datas2.id}
+        datas2={datas2}
       />
     )
   })

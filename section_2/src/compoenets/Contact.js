@@ -1,15 +1,17 @@
 import React from "react"
 
-export default function Contact({ img, name, phone, email }) {
+export default function Contact(props) {
+
+    console.log(props.datas2)
     return (
         <div className="contact-card">
-            <img src={img} alt="img" />
-            <h3>{name}</h3>
+            <img src={props.datas2.img} alt="img" />
+            <h3>{props.datas2.name}</h3>
             <div className="info-group">
-                <p>{phone}</p>
+                <p>{props.datas2.phone}</p>
             </div>
             <div className="info-group">
-                <p>{email}</p>
+                <p>{props.datas2.email}</p>
             </div>
         </div>
     )
