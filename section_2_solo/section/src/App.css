@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* main */
+.main_container {
+  box-shadow: 0.1rem 0.1rem 1rem rgb(211, 211, 211), -0.1rem -0.1rem 1rem rgb(211, 211, 211);
+  ;
+  width: 35rem;
+  height: 44rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+
+/* nav */
+.nav_container {
+  padding: 0.7rem;
+  margin-bottom: 1.8rem;
+  background: #6ab2f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_container img {
+  width: 2.5rem;
+  margin-right: 0.1rem;
+}
+
+.nav_container span {
+  color: white;
+  letter-spacing: -0.02rem;
+}
+
+
+/* card */
+.card_container {
+  display: flex;
+  padding: 1.3rem 0;
+  margin: 0 2rem;
+  border-bottom: 0.1rem solid rgb(237, 235, 235);
+}
+
+.card_container:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.card_image {
+  width: 7rem;
+  height: 10rem;
+  border-radius: 0.5rem;
+}
+
+.card_image:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease-out;
+}
+
+.card_container section {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card_location {
+  display: flex;
+  align-items: center;
+}
+
+.card_container section img {
+  width: 1rem;
+}
+
+.card_container section span {
+  font-size: 0.7rem;
+  color: rgb(66, 66, 66);
+  letter-spacing: 0.1rem;
+  margin-right: 0.8rem;
+}
+
+.card_container section a {
+  color: rgb(159, 159, 159);
+  font-size: 0.4rem;
+  margin-bottom: 0.05rem;
+}
+
+.card_container h1 {
+  margin: 0.5rem 0 0.8rem 0;
+}
+
+.card_date {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(66, 66, 66);
+  margin-bottom: 0.5rem;
+}
+
+.card_description {
+  font-size: 0.7rem;
+  color: rgb(66, 66, 66);
+}

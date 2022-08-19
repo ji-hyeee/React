@@ -12,8 +12,6 @@ export default function App() {
     return (
       <Card
         key={datas.id}
-        // 2. Build an AirBnb Experiences Clone
-        // Project: Spread object as props
         {...datas}
       />
     )
@@ -40,3 +38,6 @@ export default function App() {
     </div>
   )
 }
+
+  // 2. Build an AirBnb Experiences Clone
+  // Project: Section 2 Solo Project
