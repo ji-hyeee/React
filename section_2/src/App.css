@@ -13,6 +13,13 @@ nav {
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
+nav p {
+  line-height: 2.5rem;
+  color: #46bfe2;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .gray {
   color: #918E9B;
 }
