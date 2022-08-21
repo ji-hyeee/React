@@ -9,6 +9,8 @@ body {
   margin: 0;
 }
 
+
+/* Header */
 header {
   /* border: 1px solid black; */
   background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(170, 58, 180, 1) 50%);
@@ -29,4 +31,30 @@ header {
   width: 3rem;
   height: 3rem;
   margin-right: 1rem;
+}
+
+
+/* Meme */
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  padding: 2rem;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
