@@ -6,12 +6,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-
-      {/* 3. Build a Meme Generator
-      Meme Generator: Form */}
       <Meme />
     </div>
   );
 }
 
 export default App;
+
+// 3. Build a Meme Generator
+// Meme Generator: Form
