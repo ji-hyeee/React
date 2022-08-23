@@ -12,6 +12,3 @@ function App() {
 }
 
 export default App;
-
-// 3. Build a Meme Generator
-// Meme Generator: Form
