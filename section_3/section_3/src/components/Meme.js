@@ -1,25 +1,29 @@
 import React from "react"
+import memesData from "../memesData"
 
 export default function Meme() {
-    // 3. Build a Meme Generator
-    // Event Listeners
-
-    // 이벤트 추가하는 두 가지 방법
-    // 1. JS
-    // .addEventLister("click", function(){})
-
-    // 2. HTML
-    // <div onclick="myFunction()"></div>
-
-    // React
-    // camelCase
-    // use { }
+    // eventListener practice
     function handleMouseOver() {
         console.log("mouseOver")
     }
 
     function handleClick() {
         console.log("click")
+    }
+
+    // 3. Build a Meme Generator
+    // Project: Get random meme
+
+    let url
+
+    function getMemeImage() {
+        console.log('click')
+        const urlData = memesData.data.memes
+        // console.log(urlData)
+        const randomNumber = Math.floor(Math.random() * urlData.length)
+        // console.log(randomNumber)
+        url = urlData[randomNumber].url
+        console.log(url)
     }
 
     return (
@@ -29,6 +33,7 @@ export default function Meme() {
                 <button onClick={handleClick}>click me!</button>
             </div>
             <form className="form">
+                <p>{url}</p>
                 <input
                     type="text"
                     placeholder="Top text"
@@ -41,6 +46,7 @@ export default function Meme() {
                 />
                 <button
                     className="form--button"
+                    onClick={getMemeImage}
                 >
                     Get a new meme image 🖼
                 </button>
@@ -48,3 +54,11 @@ export default function Meme() {
         </main>
     )
 }
+
+// 3. Build a Meme Generator
+// Project: Get random meme
+
+// 이미지 데이터가 들어있는 배열 랜덤으로 가져오기
+// const 배열 = data.memes
+// const 랜덤 = Math.floor(Math.random() * 배열.length)
+// url = 배열[랜덤].url
