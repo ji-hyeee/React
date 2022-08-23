@@ -7,12 +7,9 @@ export default function Meme() {
         console.log("mouseOver")
     }
 
-    function handleClick() {
-        console.log("click")
-    }
-
-    // 3. Build a Meme Generator
-    // Project: Get random meme
+    // function handleClick() {
+    //     console.log("click")
+    // }
 
     let url
 
@@ -26,11 +23,27 @@ export default function Meme() {
         console.log(url)
     }
 
+    // 3. Build a Meme Generator
+    // Our current conundrum / 우리의 현재 수수께끼
+    const [thing, setThing] = React.useState(["thing1", "thing2"]);
+
+    function addThing() {
+        const newThing = `thing ${thing.length + 1}`
+        setThing(prevState => [...prevState, newThing])
+    }
+
+    const thingEl = thing.map(el => {
+        return (
+            <p key={el}>{el}</p>
+        )
+    })
+
     return (
         <main>
             <div className="event-container">
                 <img src="https://pbs.twimg.com/media/FawoAzxVUAA7myJ?format=jpg&name=large" alt="kang" onMouseOver={handleMouseOver} />
-                <button onClick={handleClick}>click me!</button>
+                <button onClick={addThing}>click me!</button>
+                {thingEl}
             </div>
             <form className="form">
                 <p>{url}</p>
@@ -54,11 +67,3 @@ export default function Meme() {
         </main>
     )
 }
-
-// 3. Build a Meme Generator
-// Project: Get random meme
-
-// 이미지 데이터가 들어있는 배열 랜덤으로 가져오기
-// const 배열 = data.memes
-// const 랜덤 = Math.floor(Math.random() * 배열.length)
-// url = 배열[랜덤].url
