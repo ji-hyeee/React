@@ -49,17 +49,18 @@ export default function Meme() {
 }
 
 // 3. Build a Meme Generator
-// useState arrary destructuring / 배열 구조 분해
+// Changing State
 
-// const result = React.useState('Hello')
-// console.log(result)
-// >>> ['Hello', f()]
+// 클릭 이벤트로 내용을 변경하는 state 만들기
 
-// 배열이라는 걸 알았으니 할당할 때부터 구조 분해를 해버리자
-// const [result, function] = React.useState('wow')
-// console.log(result)
-// >>> 'wow'
+// const [result, setResult] = React.useState('YES');
+
+// const clickEvent = ()=>{
+//     setResult("NO");
+// }
 
 // return(
-//     <h1>{result}</h1> // >>> 구조분해 할당으로 받았으니 0번째 index가 아닌 result 자체를 줍시다
+//     <div onClick={clickEvent}>{result}</div>
 // )
+
+// 그 다음 문제 : 클릭해서 NO 로 바꼈는데 다시 YES 로 바뀌지 않는다 평생 NO
