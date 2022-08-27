@@ -48,19 +48,27 @@ export default function Meme() {
     )
 }
 
+
 // 3. Build a Meme Generator
-// Changing State
+// useState - Counter Practice
 
-// 클릭 이벤트로 내용을 변경하는 state 만들기
+// state를 사용해서 카운트 만들기
 
-// const [result, setResult] = React.useState('YES');
+// const [count, setCount] = React.useState(0);
 
-// const clickEvent = ()=>{
-//     setResult("NO");
+// const minus = () => {
+//     setCount(count - 1)
 // }
 
-// return(
-//     <div onClick={clickEvent}>{result}</div>
+// const plus = () => {
+//     setCount(count + 1)
+// }
+// return (
+//     <>
+//         <button onClick={minus}>-</button>
+//         <div>{count}</div>
+//         <button onClick={plus}>+</button>
+//     </>
 // )
 
-// 그 다음 문제 : 클릭해서 NO 로 바꼈는데 다시 YES 로 바뀌지 않는다 평생 NO
+// 또 다른 문제 발생 state 에 값을 요상하게 받고 있다 ?
