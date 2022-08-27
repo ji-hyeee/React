@@ -23,28 +23,8 @@ export default function Meme() {
         console.log(url)
     }
 
-    // 3. Build a Meme Generator
-    // Our current conundrum / 우리의 현재 수수께끼
-    const [thing, setThing] = React.useState(["thing1", "thing2"]);
-
-    function addThing() {
-        const newThing = `thing ${thing.length + 1}`
-        setThing(prevState => [...prevState, newThing])
-    }
-
-    const thingEl = thing.map(el => {
-        return (
-            <p key={el}>{el}</p>
-        )
-    })
-
     return (
         <main>
-            <div className="event-container">
-                <img src="https://pbs.twimg.com/media/FawoAzxVUAA7myJ?format=jpg&name=large" alt="kang" onMouseOver={handleMouseOver} />
-                <button onClick={addThing}>click me!</button>
-                {thingEl}
-            </div>
             <form className="form">
                 <p>{url}</p>
                 <input
@@ -69,41 +49,55 @@ export default function Meme() {
 }
 
 // 3. Build a Meme Generator
-// Our current conundrum / 우리의 현재 수수께끼
+// Props vs State Quiz
 
-// 3-1. 배열을 화면에 렌더링 해보자
-// const arrays = [hye1, hye2];
+// 1. How would you describe the concept of "state"?
+// 1. "state"의 개념을 어떻게 설명하시겠습니까?
 
-// const renderArray = arrays.map(e=>{
-//     return(
-//         <p>{e}</p>
-//     )
-// })
+// 컴포넌트 내부에서 데이터 값을 다룰 때 사용
 
-// return (
-//     <div>{renderArray}</div>
-// )
+// A way for React to remember saved values from within a component.
+// This is similar to declaring variables from within a component,
+// with a few added bonuses (which we'll get to later)
+// React가 컴포넌트 내에서 저장된 값을 기억하는 방법입니다.
+// 이것은 컴포넌트 내에서 변수를 선언하는 것과 유사합니다.
+// 몇 가지 추가된 보너스와 함께(나중에 다루겠습니다)
 
 
-// 3-2. 버튼 클릭시 화면에 배열을 추가해보자
-// const arrays = [hye1, hye2];
+// 2. When would you want to use props instead of state?
+// 2. state 대신 props를 사용하고 싶은 때는 언제인가요?
 
-// const addArray =()=>{
-//     const newArr = `hye ${arrays.length + 1}`
-//     arrays.push(newArr)
-//     console.log(arrays)
-// }
-// const renderArray = arrays.map(e=>{
-//     return(
-//         <p>{e}</p>
-//     )
-// })
+// 부모 컴포넌트에서 값을 받을 때, 값을 수정하지 않을 때
 
-// return (
-//     <button onClick={addArray}>click</button>
-//     <div>{renderArray}</div>
-// )
+// Anytime you want to pass data into a component so that
+// component can determine what will get displayed on the
+// screen.
+// 구성 요소에 데이터를 전달하고 싶을 때마다
+// 구성 요소는 화면에 표시할 내용을 결정할 수 있습니다.
+// 화면.
 
-// 콘솔에는 잘 입력되지만 배열에 추가되지 않는다
-// 리액트에서 데이터의 변경 사항을 표시하도록 UI를 업데이트 해야한다 / 페이지와 상호작용
-// 이제 state 를 배워보자
+
+// 3. When would you want to use state instead of props?
+// 3. 언제 props 대신 state를 사용하고 싶습니까?
+
+// 컴포넌트 내부에서 변경하고 싶은 데이터가 있을 때 사용할 수 있다
+// 변경 된 데이터를 재렌더링 할 때
+
+// Anytime you want a component to maintain some values from
+// within the component. (And "remember" those values even
+// when React re-renders the component).
+// 구성 요소가 일부 값을 유지하기를 원할 때마다
+// 구성 요소 내에서. (그리고 그 값을 "기억"하십시오.
+// React가 구성 요소를 다시 렌더링할 때).
+
+
+
+// 4. What does "immutable" mean? Are props immutable? Is state immutable?
+// 4. "불변"이란 무엇을 의미합니까? 소품은 변경할 수 없나요? 상태는 불변인가?
+
+// 변하지 않는 값 (수정할 수 없는 값)
+// props === immutable
+// state !== immutable
+
+// Unchanging. Props are immutable. State is mutable.
+// 변하지 않는. 소품은 변경할 수 없습니다. 상태는 변경 가능합니다.
