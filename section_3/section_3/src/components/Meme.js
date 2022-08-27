@@ -49,55 +49,37 @@ export default function Meme() {
 }
 
 // 3. Build a Meme Generator
-// Props vs State Quiz
+// useState
 
-// 1. How would you describe the concept of "state"?
-// 1. "state"의 개념을 어떻게 설명하시겠습니까?
+// 리액트에서 state 사용하기
 
-// 컴포넌트 내부에서 데이터 값을 다룰 때 사용
+// 1. import 
+// import React, {useState} from 'react'
+// import App from "../App"
 
-// A way for React to remember saved values from within a component.
-// This is similar to declaring variables from within a component,
-// with a few added bonuses (which we'll get to later)
-// React가 컴포넌트 내에서 저장된 값을 기억하는 방법입니다.
-// 이것은 컴포넌트 내에서 변수를 선언하는 것과 유사합니다.
-// 몇 가지 추가된 보너스와 함께(나중에 다루겠습니다)
+// 리액트를 import 한 것 처럼 구조분해할당으로 react hook인 useState를 불러온다
 
 
-// 2. When would you want to use props instead of state?
-// 2. state 대신 props를 사용하고 싶은 때는 언제인가요?
+// 2. in componenet
+// App(){
+//     React.useState()
+// }
 
-// 부모 컴포넌트에서 값을 받을 때, 값을 수정하지 않을 때
-
-// Anytime you want to pass data into a component so that
-// component can determine what will get displayed on the
-// screen.
-// 구성 요소에 데이터를 전달하고 싶을 때마다
-// 구성 요소는 화면에 표시할 내용을 결정할 수 있습니다.
-// 화면.
+// 컴포넌트 내부에서 가져온다
+// 이게 더 명확해보인다고 한다
 
 
-// 3. When would you want to use state instead of props?
-// 3. 언제 props 대신 state를 사용하고 싶습니까?
+// Challenge: 
+// Replace our hard-coded "Yes" on the page 
+// with some state initiated with React.useState()
 
-// 컴포넌트 내부에서 변경하고 싶은 데이터가 있을 때 사용할 수 있다
-// 변경 된 데이터를 재렌더링 할 때
+// const result = React.useState('Hello')
 
-// Anytime you want a component to maintain some values from
-// within the component. (And "remember" those values even
-// when React re-renders the component).
-// 구성 요소가 일부 값을 유지하기를 원할 때마다
-// 구성 요소 내에서. (그리고 그 값을 "기억"하십시오.
-// React가 구성 요소를 다시 렌더링할 때).
+// return(
+//     <h1>{result[0]}</h1>
+// )
 
-
-
-// 4. What does "immutable" mean? Are props immutable? Is state immutable?
-// 4. "불변"이란 무엇을 의미합니까? 소품은 변경할 수 없나요? 상태는 불변인가?
-
-// 변하지 않는 값 (수정할 수 없는 값)
-// props === immutable
-// state !== immutable
-
-// Unchanging. Props are immutable. State is mutable.
-// 변하지 않는. 소품은 변경할 수 없습니다. 상태는 변경 가능합니다.
+// useState 를 담은 변수 result를 console로 확인하면
+// ['Hello', f()]
+// 배열 안에 우리가 입력한 문자열과 함수가 나온다
+// 우리가 입력한 문자열은 default value 가 된다 / 초기값
