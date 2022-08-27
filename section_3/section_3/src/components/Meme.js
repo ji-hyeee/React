@@ -67,3 +67,43 @@ export default function Meme() {
         </main>
     )
 }
+
+// 3. Build a Meme Generator
+// Our current conundrum / 우리의 현재 수수께끼
+
+// 3-1. 배열을 화면에 렌더링 해보자
+// const arrays = [hye1, hye2];
+
+// const renderArray = arrays.map(e=>{
+//     return(
+//         <p>{e}</p>
+//     )
+// })
+
+// return (
+//     <div>{renderArray}</div>
+// )
+
+
+// 3-2. 버튼 클릭시 화면에 배열을 추가해보자
+// const arrays = [hye1, hye2];
+
+// const addArray =()=>{
+//     const newArr = `hye ${arrays.length + 1}`
+//     arrays.push(newArr)
+//     console.log(arrays)
+// }
+// const renderArray = arrays.map(e=>{
+//     return(
+//         <p>{e}</p>
+//     )
+// })
+
+// return (
+//     <button onClick={addArray}>click</button>
+//     <div>{renderArray}</div>
+// )
+
+// 콘솔에는 잘 입력되지만 배열에 추가되지 않는다
+// 리액트에서 데이터의 변경 사항을 표시하도록 UI를 업데이트 해야한다 / 페이지와 상호작용
+// 이제 state 를 배워보자
