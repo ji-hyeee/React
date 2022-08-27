@@ -49,37 +49,17 @@ export default function Meme() {
 }
 
 // 3. Build a Meme Generator
-// useState
-
-// 리액트에서 state 사용하기
-
-// 1. import 
-// import React, {useState} from 'react'
-// import App from "../App"
-
-// 리액트를 import 한 것 처럼 구조분해할당으로 react hook인 useState를 불러온다
-
-
-// 2. in componenet
-// App(){
-//     React.useState()
-// }
-
-// 컴포넌트 내부에서 가져온다
-// 이게 더 명확해보인다고 한다
-
-
-// Challenge: 
-// Replace our hard-coded "Yes" on the page 
-// with some state initiated with React.useState()
+// useState arrary destructuring / 배열 구조 분해
 
 // const result = React.useState('Hello')
+// console.log(result)
+// >>> ['Hello', f()]
+
+// 배열이라는 걸 알았으니 할당할 때부터 구조 분해를 해버리자
+// const [result, function] = React.useState('wow')
+// console.log(result)
+// >>> 'wow'
 
 // return(
-//     <h1>{result[0]}</h1>
+//     <h1>{result}</h1> // >>> 구조분해 할당으로 받았으니 0번째 index가 아닌 result 자체를 줍시다
 // )
-
-// useState 를 담은 변수 result를 console로 확인하면
-// ['Hello', f()]
-// 배열 안에 우리가 입력한 문자열과 함수가 나온다
-// 우리가 입력한 문자열은 default value 가 된다 / 초기값
