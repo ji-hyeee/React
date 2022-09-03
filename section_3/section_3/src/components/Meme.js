@@ -50,57 +50,45 @@ export default function Meme() {
 
 
 // 3. Build a Meme Generator
-// useState - Counter Practice
+// Changing State Quiz!
 
-// state를 사용해서 카운트 만들기
+// 1. You have 2 options for what you can pass in to a
+//    state setter function (e.g. `setCount`). What are they?
+// 1. 상태 설정자 함수(예: `setCount`)에 전달할 수 있는 항목에는 2가지 옵션이 있습니다. 그들은 무엇인가?
 
-// const [count, setCount] = React.useState(0);
+// just code...?
+// callback function
 
-// const minus = () => {
-//     setCount(count - 1)
-// }
+// ref//
+// a. New value of state (setCount(42))
+// b. Callback function - whatever the callback function 
+//    returns === new value of state
+// a. 상태의 새 값(setCount(42))
+// b. 콜백 함수 - 모든 콜백 함수
+//     반환 === 상태의 새 값
+    
 
-// const plus = () => {
-//     setCount(count + 1)
-// }
-// return (
-//     <>
-//         <button onClick={minus}>-</button>
-//         <div>{count}</div>
-//         <button onClick={plus}>+</button>
-//     </>
-// )
 
-// 또 다른 문제 발생 state 에 값을 요상하게 받고 있다 ?
+// 2. When would you want to pass the first option (from answer
+//    above) to the state setter function?
+// 2. 첫 번째 옵션(위의 답변에서)을 언제 상태 설정자 함수에 전달하시겠습니까?
 
-// 3. Build a Meme Generator
-// useState - Changing state with a Callback Function
+// 그냥 냅다.. 
+// 모르겠는데요 솔직히
 
-// useState의 두번째 인자인 함수의 파라미터에 콜백 함수를 넣어주자
-// 콜백 함수를 제공하면 새로운 상태 값을 결정하기 위해 이전 상태 값을 사용할 때마다 콜백함수를 파라미터로 전달한다
-// 오래된 값을 가져와서 함수가 호출되었을 때 카운트에 대한 참조로 사용할 수 있다 (렌더링 관련)
+// ref//
+// Whenever you don't need the previous value of state to determine
+// what the new value of state should be.
+// 상태의 새 값이 무엇인지 결정하기 위해 이전 상태 값이 필요하지 않을 때마다.
 
-// 상태의 새 값을 결정하기 위해 이전 상태 값을 사용해야 하는 경우
-// 항상 카운트를 설정하는 함수를 전달하도록 계획해야한다고 간단하게 정리하기
 
-// const [count, setCount] = React.useState(0);
 
-// const minus = () => {
-//     setCount(count - 1)
-// }
+// 3. When would you want to pass the second option (from answer
+//    above) to the state setter function?
+// 3. 두 번째 옵션(위의 답변에서)을 언제 상태 설정자 함수에 전달하시겠습니까?
 
-// 그냥 함수 (인자가 콜백함수)
-// function minus(){
-//     setCount(function(oldValue){
-//         return oldValue - 1
-//     })
-// }
+// 예전 상태값을 가져와서 또 다시 렌더링 해야할 때
 
-// 화살표 함수로 만들기
-// function minus(){
-//     setCount(oldValue => oldValue - 1)
-// }
-
-// 따라서 상태의 새 값을 결정하는 데 도움이 되는 상태의 이전 값이 필요한 경우 또는 상태의 새 값이 상태의 이전 값이 무엇인지 아는 데 의존하는 경우
-
-// 여기에서 하는 것처럼 상태를 직접 사용하는 대신 항상 상태 설정자 함수에 콜백 함수를 전달해야 합니다.
+// ref//
+// Whenever you DO need the previous value to determine the new value
+// 새 값을 결정하기 위해 이전 값이 필요할 때마다
