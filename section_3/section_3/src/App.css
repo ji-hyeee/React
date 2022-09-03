@@ -94,3 +94,12 @@ header {
 .event-container button:active {
   transform: scale(0.97);
 }
+
+.meme_image {
+  display: flex;
+  justify-content: center;
+}
+
+.meme_image img {
+  width: 30rem;
+}

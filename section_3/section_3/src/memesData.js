@@ -1,6 +1,6 @@
 const memesData = {
     "success": true,
-    "memesData": {
+    "data": {
         "memes": [
             {
                 "id": "181913649",
