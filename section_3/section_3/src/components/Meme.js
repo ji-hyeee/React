@@ -2,24 +2,6 @@ import React from "react"
 import memesData from "../memesData"
 
 export default function Meme() {
-    // 3. Build a Meme Generator
-    // Project: Add images to the meme generator
-
-    /**
-     * Challenge: Save the random meme URL in state
-     * - Create new state called `memeImage` with an
-     *   empty string as default
-     * - When the getMemeImage function is called, update
-     *   the `memeImage` state to be the random chosen
-     *   image URL
-     * - Below the div.form, add an <img /> and set the
-     *   src to the new `memeImage` state you created
-     * 
-     * 과제: 임의의 밈 URL을 상태에 저장
-     * - 기본적으로 빈 문자열을 사용하여 `memeImage`라는 새 상태를 만듭니다.
-     * - getMemeImage 함수가 호출되면 `memeImage` 상태를 무작위로 선택된 이미지 URL로 업데이트합니다.
-     * - div.form 아래에 <img />를 추가하고 src를 새로 만든 `memeImage` 상태로 설정합니다.
-     */
 
     const [memeImage, setMemeImage] = React.useState("")
 
@@ -56,3 +38,39 @@ export default function Meme() {
         </main>
     )
 }
+
+// 3. Build a Meme Generator
+// Challenge: Ternary Practice
+// 응용: 삼항 연습
+
+/**
+ * Challenge: Replace the if/else below with a ternary
+ * to determine the text that should display on the page
+ * 과제: 아래의 if/else를 삼항으로 대체하여 페이지에 표시할 텍스트를 결정합니다.
+ */
+
+// const TorF = false;
+
+// let answer = (TorF === true) ? "Yes" : "No"
+
+// return(
+//     <div>{answer}</div>
+// )
+
+/**
+* Challenge: move our ternary directly inside of the JSX
+* so the "Yes" and "No" are determined inside the <h1>
+*
+* Hint: you will no longer need the `answer` variable
+*
+* 과제: 삼항을 JSX 내부로 직접 이동
+* 그래서 "Yes"와 "No"는 <h1> 내부에서 결정됩니다.
+*
+* 힌트: 더 이상 `answer` 변수가 필요하지 않습니다.
+*/
+
+// const TorF = true
+
+// return(
+//     <h1>{TorF ? "Yes" : "No"}</h1>
+// )
