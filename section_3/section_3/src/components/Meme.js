@@ -40,69 +40,38 @@ export default function Meme() {
 }
 
 // 3. Build a Meme Generator
-// Challenge: flipping State back and forth
-// 과제: 상태를 앞뒤로 뒤집기
+// Complex State Array
+// 복잡한 상태 배열
 
-// export default function App() {
-    /**
-     * Challenge: 
-     * - Initialize state for `isGoingOut` as a boolean
-     * - Make it so clicking the div.state--value flips that
-     *   boolean value (true -> false, false -> true)
-     * - Display "Yes" if `isGoingOut` is `true`, "No" otherwise
-     * 
-     * - 'isGoingOut'의 상태를 부울로 초기화
-     * - div.state--value를 클릭하면 해당 부울 값이 뒤집힙니다(true -> false, false -> true).
-     * - `isGoingOut`이 `true`이면 "Yes"를 표시하고, 그렇지 않으면 "No"를 표시합니다.
-     */
+// function App() {
+//     /**
+//      * Challenge: Convert the code below to use an array
+//      * held in state instead of a local variable. Initialize 
+//      * the state array with the same 2 items below
+//      * 
+//      * Don't worry about fixing `addItem` quite yet.
+//      * 
+//      * * 과제: 지역 변수 대신 상태에 보관된 배열을 사용하도록 아래 코드를 변환하십시오. 아래의 동일한 2개 항목으로 상태 배열을 초기화합니다.
+//       *
+//       * 아직 `addItem`을 수정하는 것에 대해 걱정하지 마십시오.
+//      */
+//     // const thingsArray = ["Thing 1", "Thing 2"]
+//     const [state, setState] = React.useState(["Thing 1", "Thing 2"])
     
-// ref [use callback] - cuz we use previous state
-//     const [isGoingOut, setIsGoingOut] = React.useState(true);
-    
-//     const click = ()=>{
-//         setIsGoingOut(e=>!e)
+//     function addItem() {
+//         // We'll work on this next
+//         // const newThingText = `Thing ${thingsArray.length + 1}`
+//         // thingsArray.push(newThingText)
+//         // document.getElementById()
+//         // console.log(thingsArray)
 //     }
     
+//     const thingsElements = state.map(thing => <p key={thing}>{thing}</p>)
+    
 //     return (
-//         <div className="state">
-//             <h1 className="state--title">Do I feel like going out tonight?</h1>
-//             <div className="state--value" onClick={click}>
-//                 <h1>{isGoingOut?"Yes":"No"}</h1>
-//             </div>
+//         <div>
+//             <button onClick={addItem}>Add Item</button>
+//             {thingsElements}
 //         </div>
 //     )
 // }
-
-// 처음 푼 코드
-//     const [isGoingOut, setIsGoingOut] = React.useState(true);
-//     const [yes, setYes] = React.useState('Yes');
-    
-//     const click = ()=>{
-//         isGoingOut ? setIsGoingOut(false) : setIsGoingOut(true)
-//         isGoingOut ? setYes('Yes') : setYes('No')
-//     }
-    
-//     return (
-//         <div className="state">
-//             <h1 className="state--title">Do I feel like going out tonight?</h1>
-//             <div className="state--value" onClick={click}>
-//                 <h1>{yes}</h1>
-//             </div>
-//         </div>
-//     )
-
-// 번뜩 떠오른 코드
-// const [isGoingOut, setIsGoingOut] = React.useState(true);
-
-// const click = ()=>{
-//     isGoingOut ? setIsGoingOut(false) : setIsGoingOut(true)
-// }
-
-// return (
-//     <div className="state">
-//         <h1 className="state--title">Do I feel like going out tonight?</h1>
-//         <div className="state--value" onClick={click}>
-//             <h1>{isGoingOut?"Yes":"No"}</h1>
-//         </div>
-//     </div>
-// )
