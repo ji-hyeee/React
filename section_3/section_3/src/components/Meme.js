@@ -57,17 +57,18 @@ export default function Meme() {
 //      */
 //     // const thingsArray = ["Thing 1", "Thing 2"]
 //     const [state, setState] = React.useState(["Thing 1", "Thing 2"])
-    
+
 //     function addItem() {
 //         // We'll work on this next
 //         // const newThingText = `Thing ${thingsArray.length + 1}`
 //         // thingsArray.push(newThingText)
 //         // document.getElementById()
 //         // console.log(thingsArray)
+//         setState(e => [...e, `Thing ${e.length + 1}`])
 //     }
-    
+
 //     const thingsElements = state.map(thing => <p key={thing}>{thing}</p>)
-    
+
 //     return (
 //         <div>
 //             <button onClick={addItem}>Add Item</button>
